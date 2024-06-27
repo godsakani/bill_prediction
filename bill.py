@@ -6,7 +6,7 @@ import streamlit as st
 def load_model():
  
   try:
-    with open('C:/Users/Godwill/projects/meng/bill.sav', 'rb') as file:
+    with open('bill.sav', 'rb') as file:
       loaded_model = pickle.load(file)
     return loaded_model
   except FileNotFoundError:
