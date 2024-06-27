@@ -10,7 +10,7 @@ def load_model():
       loaded_model = pickle.load(file)
     return loaded_model
   except FileNotFoundError:
-    st.error("Model file not found. Please ensure 'model.sav' is in the correct location.")
+    st.error("Model file not found. Please ensure 'bill.sav' is in the correct location.")
     return None  # Indicate model loading failure
 
 def predict_bill(amount, model):
